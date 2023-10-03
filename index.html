@@ -9,8 +9,8 @@
     <title>FunFroyo Factory</title>
 </head>
 <body class="w-screen h-screen flex items-center justify-center bg-slate-600 text-white ">
-    <main class="flex flex-col gap-2 text-center bg-slate-800 min-w-fit p-4 rounded-xl">
-        <section class="flex flex-col gap-2">
+    <main class="flex flex-col gap-2 text-center bg-slate-800 min-w-fit p-4 rounded-xl shadow-2xl">
+        <section class="flex flex-col gap-2" id="place-order">
             <h1 class="text-center text-2xl font-bold ">Welcome to FunFroyo factory</h1>
         <p class="font-sans italic text-sm">Let us know what flavors you would like</p>
         </br>
@@ -19,9 +19,9 @@
         </textarea>
         <button type="button" onclick="getFlavors()" class="p-2 text-lg bg-slate-900 rounded-md hover:bg-slate-900/80">Submit order</button>
         </section>
-        <section class="text-left">
-            You ordered:
-            <ul id="flavorsList" class="list-disc list-inside pl-3">
+        <section class="text-left opacity-100 transition-all" id="order-list">
+            <h2>You ordered:</h2>
+            <ul id="flavors-list" class="list-disc list-inside pl-3">
                 <li><span>3</span> Vanilla Froyo</li>
                 <li><span>1</span> Strayberry Froyo</li>
                 <li><span>2</span> Coffee Froyo</li>
