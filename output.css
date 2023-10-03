@@ -820,6 +820,10 @@ video {
   width: 100%;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -1823,6 +1827,16 @@ video {
 .bg-red-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ff2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 34 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgb\(56\2c 228\2c 119\)\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 228 119 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
