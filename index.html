@@ -8,37 +8,21 @@
     <link rel="shortcut icon" href="./images/favicon.png" >
     <title>FunFroyo Factory</title>
 </head>
-<body class="w-screen h-screen flex items-center justify-center bg-slate-600 text-white ">
-    <main class="flex flex-col gap-2 text-center bg-slate-800 w-96 p-4 rounded-xl shadow-2xl">
+<body class="flex items-center justify-center w-screen h-screen text-white bg-slate-600 ">
+    <main class="flex flex-col gap-2 p-4 text-center shadow-2xl bg-slate-800 w-96 rounded-xl">
         <section class="flex flex-col gap-2" id="place-order">
-            <h1 class="text-center text-2xl font-bold ">Welcome to FunFroyo factory</h1>
-        <p class="font-sans italic text-sm">Let us know what flavors you would like</p>
+            <h1 class="text-2xl font-bold text-center ">Welcome to FunFroyo factory</h1>
+        <p class="font-sans text-sm italic">Let us know what flavors you would like</p>
         </br>
         <label for="flavors">Enter your flavors separated by a comma</label>
-        <textarea name="flavors" id="flavors" class="rounded-md p-2 text-black ">
-        </textarea>
-        <button type="button" onclick="placeOrder()" class="p-2 text-lg bg-slate-900 rounded-md hover:bg-slate-900/80">Submit order</button>
+        <input id="flavors" class="p-2 text-black rounded-md" required type="text"/>
+        <button type="button" onclick="placeOrder()" class="p-2 text-lg rounded-md bg-slate-900 hover:bg-slate-900/80">Submit order</button>
         </section>
-        <section class="text-left opacity-100 transition-all" id="order-list">
+        <section class="text-left transition-all opacity-0" id="order-section" >
             <h2>You ordered:</h2>
-            <table class="table-fixed w-full  border-collapse rounded-md">
-                <thead>
-                    <tr>
-                        <th class="border border-white p-2">Flavor</th>
-                        <th class="border border-white p-2">Quantity</th>
-                    </tr>
-                </thead>
-                <tbody id="order-list-body " class="border border-white ">
-                    <tr >
-                        <td class="border border-white p-2">Chocolate</td>
-                        <td class="border border-white p-2">2</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-white p-2">Vanilla</td>
-                        <td class="border border-white p-2">1</td>
-                    </tr>
-                </tbody>
-            </table>
+            <ul id="order-list" class="list-disc list-inside transition-all">
+            </ul>
+
         </section>
     </main>
 </body>
